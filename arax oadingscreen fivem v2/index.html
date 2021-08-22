@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio id="loading" src="music/music.mp3" autoplay="true" hidden="true" loop="true"></audio>
+<div class="img-center">
+    <img class="img-logo" src="img/logo.png">
+    <h1 class="server-name">XLIFE SERVER</h1>
+</div>
+<div class="video-background">
+    <video autoplay="autoplay" class="video" muted><source src="video/video.mp4" type="video/mp4" /></video>
+</div><br>
+    <div id="box-rules">
+        <h1 class="title"><b>Rules</b></h1>
+        <hr>
+        <div class="box-scroll">
+        <h1 class="name">1. Rule</h1>
+        <h1 class="name">2. Rule</h1>
+        <h1 class="name">3. Rule</h1>
+        <h1 class="name">4. Rule</h1>
+        <h1 class="name">5. Rule</h1>
+        <h1 class="name">6. Rule</h1>
+        <h1 class="name">7. Rule</h1>
+        <h1 class="name">8. Rule</h1>
+        <h1 class="name">9. Rule</h1>
+        <h1 class="name">10. Rule</h1>
+        <h1 class="name">11. Rule</h1>
+        <h1 class="name">12. Rule</h1>
+        <h1 class="name">13. Rule</h1>
+        <h1 class="name">14. Rule</h1>
+        <h1 class="name">15. Rule</h1>
+        <h1 class="name">16. Rule</h1>
+        <h1 class="name">17. Rule</h1>
+        <h1 class="name">18. Rule</h1>
+        <h1 class="name">19. Rule</h1>
+        <h1 class="name">20. Rule</h1>
+        </div>
+      </div>
+      <div id="box-faq">
+        <h1 class="title"><b>Quick Start (FAQ)</b></h1>
+        <hr class="line">
+        <div class="box-scroll">
+        <h1 class="name">
+            Q: How to open the phone
+            <br>
+            A: Press <span class="color">[F1]</span> to display the phone
+        </h1>
+        <h1 class="name">
+            Q: How to make animations
+            <br>
+            A: Press <span class="color">[F2]</span> to display all animations
+        </h1>
+        <h1 class="name">
+            Q: how to open the inventory
+            <br>
+            A: Press <span class="color">[F3]</span> to open the inventory
+        </h1>
+        <h1 class="name">
+            Q: How to open the job menu
+            <br>
+            A: Press <span class="color">[F6]</span> to open the job menu
+        </h1>
+        <h1 class="name">
+            Q: How to view invoices
+            <br>
+            A: Press <span class="color">[F7]</span> to display the invoices
+        </h1>
+        <h1 class="name">
+            Q: How to use the keys of a vehicle
+            <br>
+            A: Press <span class="color">[U]</span> to display the key menu
+        </h1>
+        <h1 class="name">
+            Q: How to talk in-game
+            <br>
+            A: Press <span class="color">[N]</span> to speak in game
+        </h1>
+        <h1 class="name">
+            Q: How to use the seat belt
+            <br>
+            A: Press <span class="color">[K]</span> in a vehicle to put on the seat belt
+        </h1>
+        </div>
+      </div>
+      <div class="gradient-border" id="box-staff">
+        <h1 class="title"><b>Staff Members</b></h1>
+        <hr>
+        <div>
+            <div class="box-staff-founder">
+                <img src="img/staff1.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">FOUNDER</h1>
+            </div>
+            <div class="box-staff-developer">
+                <img src="img/staff2.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">DEVELOPER</h1>
+            </div>
+            <div class="box-staff-developer">
+                <img src="img/staff3.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">DEVELOPER</h1>
+            </div>
+            <div class="box-staff-administrator">
+                <img src="img/staff4.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">ADMINISTRATOR</h1>
+            </div>
+            <div class="box-staff-moderator">
+                <img src="img/staff5.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">MODERATOR</h1>
+            </div>
+            <div class="box-staff-moderator">
+                <img src="img/staff6.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">MODERATOR</h1>
+            </div>
+            <div class="box-staff-moderator">
+                <img src="img/staff7.png" class="img-staff">
+                <h1 class="name-staff">Redven Biker</h1>
+                <h1 class="grade-staff">MODERATOR</h1>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+        <h1 class="website">Website: <span class="color-footer">https://xlife.fr</span></h1>
+        <h1 class="discord">Discord: <span class="color-footer">https://discord.gg/C3aN2bBVbB</span></h1>
+    </div>
+      
+<script>
+    var play = false;
+            var vid = document.getElementById("loading");
+            vid.volume = 0.1;
+            window.addEventListener('keyup', function(e)
+            {
+                if (e.which == 69){
+                    vid.volume = Math.min(vid.volume + 0.1,1);
+                } else if(e.which == 65){
+                    vid.volume = Math.max(vid.volume - 0.1,0);
+                };
+            });
+    
+            var audio = document.querySelector('audio');
+    
+            if (audio) {
+    
+            window.addEventListener('keydown', function (event) {
+    
+            var key = event.which || event.keyCode;
+    
+            if (key === 32) { // spacebar
+    
+            event.preventDefault();
+    
+            audio.paused ? audio.play() : audio.pause();
+          
+        }
+    
+      });
+    }
+    </script>
+    <script src='js/script.js'></script>
+</body>
+</html>
